@@ -1,4 +1,4 @@
-import { take, put, takeEvery, all, delay } from "redux-saga/effects";
+import { put, takeEvery, all } from "redux-saga/effects";
 import { API } from "../config/env";
 import axios from "axios";
 

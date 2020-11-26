@@ -22,6 +22,7 @@ function App(props: IProps) {
       await fetchUrls();
     }, 5000);
     return () => clearInterval(timer);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
   const [result, setResult] = useState([]);
   useEffect(
@@ -39,7 +40,9 @@ function App(props: IProps) {
 
   return (
     <div className="App">
-      <Link to="/log">调用历史记录页</Link>
+      <Link data-testid="log" to="/log">
+        调用历史记录页
+      </Link>
       <h3>
         第<span data-testid="counter">{count}</span>
         次调用

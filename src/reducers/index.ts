@@ -4,10 +4,6 @@ interface IAction {
     data: object;
   };
 }
-// interface IState {
-//   logs: [];
-// }
-
 let defaultState = {
   logs: <any>[],
 };
